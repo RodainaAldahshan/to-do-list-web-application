@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>to do list web application</title>
+</head>
+<body>
+    <div class="TASKS">
+        <span id="date"></span>
+        <h1>To-Do List</h1>
+        
+        <input id="task-text" class="entered-list" type="text" placeholder="What's your next task?">
+        <input id="due-date" type="date" class="due-date-input">
+    
+        <button class="add-list">Add</button>
+        <button class="deleteAll"> Clear All </button>
+    
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="All">All</option> 
+                <option value="Completed">Completed</option>
+                <option value="Incomplete">Incomplete</option>
+            </select>
+        </div>
+        
+        <div class="tasks">
+            <!-- New tasks will be added here -->
+        </div>
+    </div>
+    
+
+
+</div>
+<script src="script.js"></script>
+
+    
+</body>
+</html>

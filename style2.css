@@ -1,0 +1,220 @@
+
+body {
+    font-family: 'Alex Brush', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #4d408d, #7f799e); 
+}
+
+
+.TASKS {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.TASKS h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.TASKS input {
+    width: calc(100% - 22px); 
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.TASKS button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #e45f55;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.TASKS button:hover {
+    background-color: #bb443c;
+}
+
+
+.deleteAll {
+    background-color: #f44336;
+}
+
+.deleteAll:hover {
+    background-color: #e53935;
+}
+
+
+.task-item {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item .due-date {
+    font-size: 0.9em;
+    color: gray;
+    margin-left: 10px;
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.item {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd6e6;
+}
+
+.item p {
+    font-size: 18px;
+    color: #333;
+}
+
+.item.completed p {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.item-btn i {
+    color: #555;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item-btn i:hover {
+    color: #333;
+}
+
+
+.select {
+    margin: 20px 0;
+}
+
+.select select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.input-header {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.input-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+@media (max-width:600px)
+{
+    .TASKS {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .TASKS h1 {
+        font-size: 20px;
+    }
+
+    .item p {
+        font-size: 16px;
+    }
+
+    .TASKS button {
+        width: 40%;
+        margin-top: 10px;
+        font-size: 15px;
+        padding:15px
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        font-family: 'Alex Brush', cursive;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        height: 100vh;
+        background: linear-gradient(135deg, #4d408d, #7f799e);
+    }
+
+    .TASKS {
+        padding: 40px;
+        width: 60%;
+    }
+
+    .TASKS h1 {
+        font-size: 36px;
+    }
+
+    .TASKS input {
+        width: calc(100% - 24px);
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    .TASKS button {
+        padding: 14px 28px;
+        font-size: 18px;
+    }
+
+    .item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .item p {
+        font-size: 20px;
+    }
+
+    .item-btn i {
+        font-size: 24px;
+    }
+
+    .select select {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .input-header h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title >Login Form</title>
+</head>
+<body>
+    <div class="container">
+    <header><h1>Sign In</h1></header>
+    <form id="loginForm">
+<div class="input-box">
+    <input type="text" placeholder="Username" required>
+    <i class='bx bxs-user'></i>
+</div>
+<br/>
+<div class="input-box">
+    <input type="password" placeholder="Password" required>
+    <i class='bx bx-lock-alt'></i>
+</div>
+<br/>
+<div class="Remember-forgot">
+    <label> <input type="checkbox">Remember me</label>
+    <a href="#">Forgot Password?</a>
+</div>
+
+<p class="login"> <a href="index.html" style=" color: #fff8f8; text-decoration: none;" >log in </a></p>
+<div class="register-link">
+    <label>Don't have an account?</label>
+    <a href="register.html">Sign up</a>
+</div>
+</form>
+</div>
+</body>
+<script>
+    // Get the username and password input elements from the DOM
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+
+    // Function to validate login inputs
+    const validateLoginInputs = () => {
+        let isValid = true; // Initialize isValid as true
+
+        // Check if the username input is empty
+        if (username.value.trim() === '') {
+            alert('Username is required'); // Show alert if username is empty
+            isValid = false; // Set isValid to false
+        }
+
+        // Check if the password input is empty
+        if (password.value.trim() === '') {
+            alert('Password is required'); // Show alert if password is empty
+            isValid = false; // Set isValid to false
+        }
+
+        return isValid; // Return the overall validation result
+    };
+
+    // Add an event listener to the login button for the 'click' event
+    document.getElementById('login').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default button click behavior
+
+        // Validate the login inputs
+        if (validateLoginInputs()) {
+            window.location.href = 'index.html'; // Redirect to 'index.html' if inputs are valid
+        } else {
+            alert('Please fill out all required fields before proceeding.'); // Alert if validation fails
+        }
+    });
+</script>
+
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 DivList. All rights reserved.</p>
+    </div>
+</footer>
+</html>
